@@ -1,0 +1,7 @@
+{
+  "name": "week4examples",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
