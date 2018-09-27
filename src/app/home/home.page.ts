@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +9,21 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  constructor(public router: Router, public navCtrl: NavController ) {
+  }
+
+  onClick() {
+    this.router.navigateByUrl('/about');
+  }
+
+  onClickUsingNavCtrl() {
+    this.navCtrl.navigateForward('/about');
+  }
+
+  goToSettings() {
+    this.navCtrl.navigateForward('/settings');
+
+  }
 }
+
+
